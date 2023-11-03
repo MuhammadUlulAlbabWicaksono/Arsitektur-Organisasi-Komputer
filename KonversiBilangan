@@ -1,0 +1,56 @@
+def biner_ke_desimal():
+    biner = input("Masukkan bilangan biner: ")
+    desimal = int(biner, 2)
+    print("Hasil konversi:", desimal)
+
+def desimal_ke_biner():
+    desimal = int(input("Masukkan bilangan desimal: "))
+    biner = bin(desimal)[2:]
+    print("Hasil konversi:", biner)
+
+def biner_ke_hexa():
+    biner = input("Masukkan bilangan biner: ")
+    desimal = int(biner, 2)
+    heksa = hex(desimal)[2:].upper()
+    print("Hasil konversi:", heksa)
+
+def hexa_ke_biner():
+    heksa = input("Masukkan bilangan heksadesimal: ")
+    desimal = int(heksa, 16)
+    biner = bin(desimal)[2:]
+    print("Hasil konversi:", biner)
+
+def desimal_ke_hexa():
+    desimal = int(input("Masukkan bilangan desimal: "))
+    heksa = hex(desimal)[2:].upper()
+    print("Hasil konversi:", heksa)
+
+def hexa_ke_desimal():
+    heksa = input("Masukkan bilangan heksadesimal: ")
+    desimal = int(heksa, 16)
+    print("Hasil konversi:", desimal)
+
+print("Pilih konversi yang ingin Anda lakukan:")
+print("1. Biner ke Desimal")
+print("2. Desimal ke Biner")
+print("3. Biner ke Heksadesimal")
+print("4. Heksadesimal ke Biner")
+print("5. Desimal ke Heksadesimal")
+print("6. Heksadesimal ke Desimal")
+
+pilihan = int(input("Masukkan pilihan (1-6): "))
+
+if pilihan == 1:
+    biner_ke_desimal()
+elif pilihan == 2:
+    desimal_ke_biner()
+elif pilihan == 3:
+    biner_ke_hexa()
+elif pilihan == 4:
+    hexa_ke_biner()
+elif pilihan == 5:
+    desimal_ke_hexa()
+elif pilihan == 6:
+    hexa_ke_desimal()
+else:
+    print("Pilihan tidak valid.")
